@@ -339,7 +339,7 @@
             <random>
                 <li>Right away!</li>
                 <li>Sure!</li>
-                <li>Installing </star></li>
+                <li>Installing <star/></li>
                 <li>Processing</li>
             </random>
             <system>sudo apt install <star/></system>
@@ -347,16 +347,15 @@
     </category>
 
     <category>
-        <pattern>* EXIT *</pattern>
+        <pattern>EXIT</pattern>
         <template>
             <random>
                 <li>See you later!</li>
                 <li>Bye!</li>
                 <li>Exiting!</li>
             </random>
-            <system>python exit.py</li>
-
-
-
-
+            <system>python -c "(exit())"</system>
+        </template>
+    </category>
+    
 </aiml>

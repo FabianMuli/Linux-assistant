@@ -21,7 +21,7 @@
     <category>
         <pattern>OPEN *</pattern>
         <template>
-            <system><star/><system>
+            <system><star/></system>
         </template>
     </category>
 
