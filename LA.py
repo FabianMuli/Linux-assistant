@@ -14,11 +14,6 @@ def main():
             kernel.bootstrap(learnFiles="std.xml", commands="load aiml b")
             kernel.saveBrain("LABrain.brn")
 
-        """def input_text():
-            text = input("~> ")
-
-            return text """
-
         while True:
             ai_speech = kernel.respond(input("~> "))
 
