@@ -5,6 +5,7 @@ import aiml
 def main():
     if __name__ == '__main__':
         kernel = aiml.Kernel()
+        kernel.setBotPredicate("name","Linux Assistant")
 
         if os.path.isfile("LABrain.brn"):
             kernel.bootstrap(brainFile="LABrain.brn")
@@ -19,9 +20,9 @@ def main():
             return text """
 
         while True:
-            ai_speech = kernel.respond(text)
+            ai_speech = kernel.respond(input("~> "))
 
-            print("Sarah: " + ai_speech)
+            print("LA: " + ai_speech)
 
 
 main()
