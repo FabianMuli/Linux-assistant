@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+    <category>
+        <pattern>TELL ME ABOUT *</pattern>
+        <template>
+            <system>python wiki.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern> WHAT IS *</pattern>
+        <template>
+            <system>python wiki.py <star/></system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN *</pattern>
+        <template>
+            <system><star/><system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SHOW RUNNING APPS</pattern>
+        <template>
+            <system>htop</system>
+        </template>
+    </category>
+
+
+</aiml>
