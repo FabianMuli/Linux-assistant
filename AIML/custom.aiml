@@ -11,6 +11,9 @@
     <category>
         <pattern> WHAT IS *</pattern>
         <template>
+            <random>
+                <li>Searching for <star/></li>
+            </random>
             <system>python wiki.py <star/></system>
         </template>
     </category>

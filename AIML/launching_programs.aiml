@@ -297,7 +297,6 @@
         </template>
     </category>
 
-
     <category>
         <pattern>YOUTUBE *</pattern>
         <template>
@@ -307,8 +306,6 @@
             <system> google-chrome-stable "https://www.youtube.com/results?search_query=<star/>"</system>
         </template>
     </category>
-
-
 
     <category>
         <pattern>GOOGLE MAPS *</pattern>
@@ -335,6 +332,31 @@
              <srai>GOOGLE MAPS <star/></srai>
         </template>
     </category>
+
+    <category>
+        <pattern>INSTALL *</pattern>
+        <template>
+            <random>
+                <li>Right away!</li>
+                <li>Sure!</li>
+                <li>Installing </star></li>
+                <li>Processing</li>
+            </random>
+            <system>sudo apt install <star/></system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* EXIT *</pattern>
+        <template>
+            <random>
+                <li>See you later!</li>
+                <li>Bye!</li>
+                <li>Exiting!</li>
+            </random>
+            <system>python exit.py</li>
+
+
 
 
 </aiml>

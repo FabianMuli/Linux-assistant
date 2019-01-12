@@ -12,7 +12,6 @@
         <!-- This learn an aiml file -->
         <template>
             <learn>AIML/*.aiml</learn>
-            <learn>alice/*.aiml</learn>
 
             <!-- You can add more aiml files here -->
             <!--<learn>more_aiml.aiml</learn>-->
