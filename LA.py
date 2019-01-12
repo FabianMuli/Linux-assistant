@@ -6,24 +6,19 @@ def main():
     if __name__ == '__main__':
         kernel = aiml.Kernel()
 
-        if os.path.isfile("ai_brain.brn"):
-            kernel.bootstrap(brainFile="ai_brain.brn")
+        if os.path.isfile("LABrain.brn"):
+            kernel.bootstrap(brainFile="LABrain.brn")
+    
         else:
             kernel.bootstrap(learnFiles="std.xml", commands="load aiml b")
-            kernel.saveBrain("ai_brain.brn")
+            kernel.saveBrain("LABrain.brn")
 
-        def input_text():
+        """def input_text():
             text = input("~> ")
 
-            return text
+            return text """
 
         while True:
-            text = input_text()
-
-            if text == "save":
-                kernel.saveBrain("ai_brain.brn")
-                text = " "
-
             ai_speech = kernel.respond(text)
 
             print("Sarah: " + ai_speech)
