@@ -1,11 +1,12 @@
-import os
+#!/usr/bin/env python
 import aiml
+import os
+import sys
 
 
 def main():
     if __name__ == '__main__':
         kernel = aiml.Kernel()
-        kernel.setBotPredicate("name","Linux Assistant")
 
         if os.path.isfile("LABrain.brn"):
             kernel.bootstrap(brainFile="LABrain.brn")
@@ -15,9 +16,7 @@ def main():
             kernel.saveBrain("LABrain.brn")
 
         while True:
-            ai_speech = kernel.respond(input("~> "))
-
-            print("LA: " + ai_speech)
+           print(kernel.respond(raw_input("~> ")))
 
 
 main()
