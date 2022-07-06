@@ -18,7 +18,7 @@ gTTS==2.0.1
 gTTS-token==1.1.1
 idna==2.7
 jedi==0.12.1
-lxml==4.2.5
+lxml==4.9.1
 mccabe==0.6.1
 numpy==1.15.1
 parso==0.3.1
